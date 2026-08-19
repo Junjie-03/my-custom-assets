@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#060B13" />
+    </linearGradient>
+
+    <!-- Premium Outer Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="25%" stop-color="#1E293B" />
+      <stop offset="75%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Cyan/Active Flow Gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Emerald/Success Flow Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Shield Inner Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Shield Border Gradient -->
+    <linearGradient id="shieldBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Radial Glow for Central Core -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Shadow for Floating Elements -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Outer Container (Safe Margin: 46px Padding, 420x420px Active Area) -->
+  <rect x="46" y="46" width="420" height="420" rx="110" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="3" />
+
+  <!-- Background Network/Data Grid (Subtle) -->
+  <g opacity="0.25">
+    <line x1="130" y1="130" x2="382" y2="382" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6" />
+    <line x1="382" y1="130" x2="130" y2="382" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6" />
+    <circle cx="130" cy="130" r="5" fill="#334155" />
+    <circle cx="382" cy="130" r="5" fill="#334155" />
+    <circle cx="130" cy="382" r="5" fill="#334155" />
+    <circle cx="382" cy="382" r="5" fill="#334155" />
+  </g>
+
+  <!-- Central Core Glow -->
+  <circle cx="256" cy="256" r="150" fill="url(#coreGlow)" />
+
+  <!-- Outer Dynamic Refresh Loops (Representing Speed & Automation) -->
+  <!-- Loop 1: Cyan (Data Ingestion & Registry Scan) -->
+  <path d="M 340, 140 A 145,145 0 0,1 385, 310 A 145,145 0 0,1 220, 398" 
+        fill="none" 
+        stroke="url(#cyanGrad)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+  
+  <!-- Loop 2: Emerald (FinCEN Verification & CLM Update) -->
+  <path d="M 172, 372 A 145,145 0 0,1 127, 202 A 145,145 0 0,1 292, 114" 
+        fill="none" 
+        stroke="url(#emeraldGrad)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+
+  <!-- Inner Processing Ring (Concentric Data Layer) -->
+  <circle cx="256" cy="256" r="112" 
+          fill="none" 
+          stroke="#1E293B" 
+          stroke-width="3" 
+          stroke-dasharray="8 12" />
+
+  <!-- Central Shield (Compliance, Security, and Fenergo Integration) -->
+  <path d="M 256, 165 L 325, 190 L 325, 265 C 325, 315 256, 345 256, 345 C 256, 345 187, 315 187, 265 L 187, 190 Z" 
+        fill="url(#shieldGrad)" 
+        stroke="url(#shieldBorderGrad)" 
+        stroke-width="4" 
+        stroke-linejoin="round"
+        filter="url(#dropShadow)" />
+
+  <!-- Beneficial Owner (UBO) Stylized Icon inside Shield -->
+  <!-- UBO Head -->
+  <circle cx="256" cy="222" r="18" fill="url(#emeraldGrad)" />
+  <!-- UBO Shoulders / Ownership Layer Arch -->
+  <path d="M 220, 282 C 220, 256 234, 248 256, 248 C 278, 248 292, 256 292, 282" 
+        fill="none" 
+        stroke="url(#emeraldGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round" />
+  <!-- Core Node Connection (Representing Direct Ownership Link) -->
+  <line x1="256" y1="240" x2="256" y2="248" stroke="#10B981" stroke-width="3" />
+
+  <!-- Left Node: Registry Input (Cyan) -->
+  <g filter="url(#dropShadow)">
+    <circle cx="187" cy="190" r="15" fill="#0B0F19" stroke="#06B6D4" stroke-width="3" />
+    <circle cx="187" cy="190" r="6" fill="#06B6D4" />
+  </g>
+
+  <!-- Right Node: Verified Compliance Output (Emerald Check) -->
+  <g filter="url(#dropShadow)">
+    <circle cx="325" cy="190" r="15" fill="#0B0F19" stroke="#10B981" stroke-width="3" />
+    <path d="M 319,190 L 323,194 L 331,186" 
+          fill="none" 
+          stroke="#10B981" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- Fast-Forward Speed Indicators (Representing Cycle Time Reduction) -->
+  <path d="M 375, 246 L 385, 256 L 375, 266" fill="none" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 387, 246 L 397, 256 L 387, 266" fill="none" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M 137, 246 L 127, 256 L 137, 266" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 125, 246 L 115, 256 L 125, 266" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
