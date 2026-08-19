@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to keep everything within the 440px circle (36px padding) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+    
+    <!-- Smooth linear gradients for premium depth -->
+    <linearGradient id="jacket-grad-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A85F6" />
+      <stop offset="100%" stop-color="#1A73E8" />
+    </linearGradient>
+    
+    <linearGradient id="jacket-grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8" />
+      <stop offset="100%" stop-color="#1557B0" />
+    </linearGradient>
+
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#1A252F" />
+    </linearGradient>
+
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5FE" />
+      <stop offset="100%" stop-color="#E8F0FE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Disc -->
+  <circle cx="256" cy="256" r="220" fill="url(#bg-grad)" stroke="#D2E3FC" stroke-width="4" />
+
+  <!-- Clipped Avatar Content -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Subtle Background Analytics Grid (Theme: Anomaly Analyzer) -->
+    <g opacity="0.35">
+      <circle cx="256" cy="256" r="180" fill="none" stroke="#ADCCF9" stroke-width="2" stroke-dasharray="8 8" />
+      <circle cx="256" cy="256" r="140" fill="none" stroke="#ADCCF9" stroke-width="1.5" />
+      <!-- Stylized Trend Line representing billing optimization -->
+      <path d="M 100 340 L 180 290 L 250 310 L 330 230 L 420 250" fill="none" stroke="#1A73E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="180" cy="290" r="5" fill="#1A73E8" />
+      <circle cx="330" cy="230" r="5" fill="#1A73E8" />
+      <circle cx="250" cy="310" r="4" fill="#8AB4F8" />
+    </g>
+
+    <!-- Neck -->
+    <path d="M 224 290 L 288 290 L 288 370 L 224 370 Z" fill="#FAD2B4" />
+    <!-- Neck Shadow -->
+    <path d="M 224 315 C 224 315, 256 345, 288 315 L 288 370 L 224 370 Z" fill="#E8A382" />
+
+    <!-- Ears -->
+    <circle cx="174" cy="230" r="16" fill="#FAD2B4" />
+    <circle cx="338" cy="230" r="16" fill="#E8A382" />
+
+    <!-- Face Base -->
+    <path d="M 176 210 C 176 150, 210 140, 256 140 C 302 140, 336 150, 336 210 C 336 275, 302 315, 256 315 C 210 315, 176 275, 176 210 Z" fill="#FAD2B4" />
+    <!-- Face Side-Shadow (Right) -->
+    <path d="M 256 140 C 295 140, 336 160, 336 210 C 336 275, 302 315, 256 315 C 278 290, 288 240, 276 190 C 266 160, 256 145, 256 140 Z" fill="#F5BE9E" />
+
+    <!-- Eyebrows -->
+    <path d="M 194 192 C 202 185, 218 185, 226 192" fill="none" stroke="#2C3E50" stroke-width="4" stroke-linecap="round" />
+    <path d="M 286 192 C 294 185, 310 185, 318 192" fill="none" stroke="#2C3E50" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Eyes (Intelligent & Warm) -->
+    <g id="eyes">
+      <!-- Left Eye -->
+      <ellipse cx="210" cy="216" rx="9" ry="10" fill="#202124" />
+      <circle cx="207" cy="213" r="3" fill="#FFFFFF" />
+      <!-- Right Eye -->
+      <ellipse cx="302" cy="216" rx="9" ry="10" fill="#202124" />
+      <circle cx="299" cy="213" r="3" fill="#FFFFFF" />
+    </g>
+
+    <!-- Glasses (Sharp, Professional, Tech-Advisory Style) -->
+    <g id="glasses" opacity="0.95">
+      <!-- Left Frame -->
+      <rect x="186" y="196" width="50" height="40" rx="14" fill="none" stroke="#1A73E8" stroke-width="4.5" />
+      <!-- Right Frame -->
+      <rect x="276" y="196" width="50" height="40" rx="14" fill="none" stroke="#1A73E8" stroke-width="4.5" />
+      <!-- Bridge -->
+      <path d="M 236 212 L 276 212" fill="none" stroke="#1A73E8" stroke-width="4.5" stroke-linecap="round" />
+      <!-- Temple Pieces -->
+      <path d="M 186 212 L 174 212" fill="none" stroke="#1A73E8" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M 326 212 L 338 212" fill="none" stroke="#1A73E8" stroke-width="4.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Nose (Minimalist & Clean) -->
+    <path d="M 251 224 L 251 248 C 251 252, 255 254, 259 254" fill="none" stroke="#E8A382" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Warm, Confident Smile -->
+    <path d="M 232 272 C 232 272, 256 296, 280 272" fill="none" stroke="#202124" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Soft Friendly Blush -->
+    <circle cx="192" cy="252" r="10" fill="#FF8A80" opacity="0.25" />
+    <circle cx="320" cy="252" r="10" fill="#FF8A80" opacity="0.2" />
+
+    <!-- Hair (Modern, Professional Side-Part) -->
+    <path d="M 172 210 C 164 150, 200 110, 256 110 C 312 110, 348 140, 340 210 C 332 190, 318 170, 288 170 C 258 170, 248 185, 228 185 C 208 185, 184 195, 172 210 Z" fill="url(#hair-grad)" />
+    <!-- Hair Highlight -->
+    <path d="M 216 122 C 240 116, 276 116, 304 124 C 284 132, 248 132, 216 122 Z" fill="#4A6572" opacity="0.3" />
+
+    <!-- Professional Attire (Banking / Advisory Operations) -->
+    <!-- Inner White Shirt -->
+    <path d="M 210 360 L 256 450 L 302 360 Z" fill="#FFFFFF" />
+    
+    <!-- Sharp Dark Blue Tie -->
+    <path d="M 247 390 L 265 390 L 261 512 L 251 512 Z" fill="#0D2C54" />
+    <!-- Tie Knot -->
+    <path d="M 245 380 L 267 380 L 260 402 L 252 402 Z" fill="#1557B0" />
+
+    <!-- Blazer Left Side -->
+    <path d="M 120 512 C 120 425, 168 360, 222 360 L 256 445 L 256 512 Z" fill="url(#jacket-grad-left)" />
+    
+    <!-- Blazer Right Side (In shadow) -->
+    <path d="M 392 512 C 392 425, 344 360, 290 360 L 256 445 L 256 512 Z" fill="url(#jacket-grad-right)" />
+
+    <!-- Sharp Lapels -->
+    <!-- Left Lapel -->
+    <path d="M 222 360 L 256 425 L 234 425 Z" fill="#1557B0" />
+    <!-- Right Lapel -->
+    <path d="M 290 360 L 256 425 L 278 425 Z" fill="#0D47A1" />
+
+    <!-- Gold Star Lapel Pin (Symbolizing "Anomaly Analyzer" / Premium Quality) -->
+    <g transform="translate(198, 402)">
+      <path d="M 0 -10 L 3 -3 L 10 0 L 3 3 L 0 10 L -3 3 L -10 0 L -3 -3 Z" fill="#FFC107" />
+      <circle cx="0" cy="0" r="2" fill="#FFF" opacity="0.8" />
+    </g>
+
+  </g>
+
+  <!-- Outer Ring Highlight to frame the premium avatar -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#1A73E8" stroke-width="4" opacity="0.15" />
+</svg>
