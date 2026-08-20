@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to ensure perfect 440px circle boundary with 36px padding -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Disc (Strictly Solid, Clean Mint Green) -->
+  <circle cx="256" cy="256" r="220" fill="#D1E7DD" />
+
+  <!-- Character Group Clipped to Outer Circle -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Back Hair (Provides depth behind ears and neck) -->
+    <path d="M 176,240 C 170,170 210,120 256,120 C 302,120 342,170 336,240 C 334,270 320,310 320,310 L 192,310 C 192,310 178,270 176,240 Z" fill="#1E1816" />
+
+    <!-- Neck -->
+    <path d="M 226,290 C 226,290 226,370 236,375 C 246,380 266,380 276,375 C 286,370 286,290 286,290 Z" fill="#F5C2B3" />
+    
+    <!-- Neck Shadow (Crisp vector shadow under chin) -->
+    <path d="M 226,305 C 240,335 272,335 286,305 L 286,345 C 286,345 266,365 256,365 C 246,365 226,345 226,345 Z" fill="#E09E8F" />
+
+    <!-- Professional Attire (FP&A Forest Green Blazer & White Shirt) -->
+    <!-- Inner Shirt (White V-Neck) -->
+    <path d="M 210,355 L 256,425 L 302,355 Z" fill="#FFFFFF" />
+    <!-- Inner Shirt Shadow -->
+    <path d="M 228,382 L 256,425 L 284,382 Z" fill="#E2E8F0" />
+    
+    <!-- Blazer Base -->
+    <path d="M 120,476 C 120,410 160,365 210,355 L 256,415 L 302,355 C 352,365 392,410 392,476 Z" fill="#0F5132" />
+    
+    <!-- Left Lapel (Medium Forest Green) -->
+    <path d="M 210,355 L 248,435 L 215,476 L 155,476 Z" fill="#198754" />
+    
+    <!-- Right Lapel (Dark Forest Green Shadow) -->
+    <path d="M 302,355 L 264,435 L 297,476 L 357,476 Z" fill="#0B3C25" />
+
+    <!-- Blazer Shoulder Highlights (Adds premium dimension) -->
+    <path d="M 125,476 C 128,425 162,385 200,370" stroke="#A3CFBB" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4" />
+
+    <!-- Head / Face Base -->
+    <path d="M 186,220 C 186,160 210,150 256,150 C 302,150 326,160 326,220 C 326,285 302,315 256,315 C 210,315 186,285 186,220 Z" fill="#F5C2B3" />
+
+    <!-- Face Shadow (Asymmetric vector shadow for 3D depth) -->
+    <path d="M 186,220 C 186,160 210,150 256,150 C 256,150 212,190 212,250 C 212,290 236,310 256,315 C 210,315 186,285 186,220 Z" fill="#E09E8F" opacity="0.45" />
+
+    <!-- Ears -->
+    <circle cx="182" cy="235" r="14" fill="#E09E8F" />
+    <circle cx="330" cy="235" r="14" fill="#E09E8F" />
+
+    <!-- Warm Friendly Cheeks -->
+    <circle cx="202" cy="262" r="12" fill="#F3A395" opacity="0.35" />
+    <circle cx="310" cy="262" r="12" fill="#F3A395" opacity="0.35" />
+
+    <!-- Eyes (Attentive, Intelligent, Focused) -->
+    <g id="eyes">
+      <!-- Left Eye Base -->
+      <circle cx="222" cy="225" r="13" fill="#111827" />
+      <!-- Right Eye Base -->
+      <circle cx="290" cy="225" r="13" fill="#111827" />
+      
+      <!-- Primary Highlights (Spark of intelligence) -->
+      <circle cx="218" cy="221" r="4.5" fill="#FFFFFF" />
+      <circle cx="286" cy="221" r="4.5" fill="#FFFFFF" />
+      
+      <!-- Secondary Highlights -->
+      <circle cx="225" cy="228" r="2" fill="#FFFFFF" />
+      <circle cx="293" cy="228" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Eyebrows (Sharp, Professional) -->
+    <path d="M 202,204 C 210,197 225,197 236,204" stroke="#2D2522" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 276,204 C 287,197 302,197 310,204" stroke="#2D2522" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Nose (Minimalist Elegant Vector) -->
+    <path d="M 252,235 C 252,254 255,257 260,257" stroke="#E09E8F" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Smile (Warm, Confident, Institutional Competence) -->
+    <g id="smile">
+      <path d="M 234,272 C 234,272 240,294 256,294 C 272,294 278,272 278,272 Z" fill="#C95B50" />
+      <!-- Teeth -->
+      <path d="M 238,274 C 246,281 266,281 274,274 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- Front Hair / Sleek Modern Bob (Framing the face beautifully) -->
+    <g id="front-hair">
+      <!-- Left Swoop -->
+      <path d="M 256,120 C 196,120 170,160 170,225 C 170,265 184,285 184,285 C 184,285 178,245 188,215 C 198,185 228,168 256,168 Z" fill="#2D2522" />
+      <!-- Right Swoop -->
+      <path d="M 256,120 C 316,120 342,160 342,225 C 342,275 330,305 330,305 C 330,305 332,255 320,225 C 310,198 280,178 256,178 Z" fill="#2D2522" />
+      <!-- Hair Highlights (Subtle tonal contrast) -->
+      <path d="M 215,138 C 230,132 270,132 285,138 C 275,143 225,143 215,138 Z" fill="#50413C" />
+    </g>
+
+    <!-- Glasses (The FP&A Analyst Signature - Sleek, Dark Green & Gold) -->
+    <g id="glasses">
+      <!-- Left Frame -->
+      <circle cx="222" cy="225" r="23" stroke="#0F5132" stroke-width="4.5" fill="none" />
+      <!-- Right Frame -->
+      <circle cx="290" cy="225" r="23" stroke="#0F5132" stroke-width="4.5" fill="none" />
+      <!-- Bridge -->
+      <path d="M 245,223 C 250,219 262,219 267,223" stroke="#0F5132" stroke-width="4" stroke-linecap="round" fill="none" />
+      <!-- Temples (Sides) -->
+      <path d="M 199,223 L 180,219" stroke="#0F5132" stroke-width="4" stroke-linecap="round" fill="none" />
+      <path d="M 313,223 L 332,219" stroke="#0F5132" stroke-width="4" stroke-linecap="round" fill="none" />
+      <!-- Lens Reflection Sheen (Adds premium digital detail) -->
+      <path d="M 208,216 L 222,204" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+      <path d="M 276,216 L 290,204" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+    </g>
+
+  </g>
+</svg>
