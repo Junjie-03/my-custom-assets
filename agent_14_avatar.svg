@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to keep the entire avatar perfectly contained within the 440px circle -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Main Circular Avatar Group -->
+  <g clip-path="url(#avatar-clip)">
+    <!-- Solid Background Disc -->
+    <circle cx="256" cy="256" r="220" fill="#F8FAFC" />
+
+    <!-- Character Art Group -->
+    <g id="character">
+      
+      <!-- Back Hair / Hair Base -->
+      <path d="M170,210 C162,175 180,125 256,115 C332,125 350,175 342,210 C352,165 330,115 256,105 C182,115 160,165 170,210 Z" fill="#0F172A" />
+
+      <!-- Ears -->
+      <!-- Left Ear -->
+      <path d="M182,215 C170,215 168,235 182,242 Z" fill="#F5C3A6" />
+      <!-- Right Ear (with shadow) -->
+      <path d="M330,215 C342,215 344,235 330,242 Z" fill="#E2A280" />
+
+      <!-- Neck -->
+      <path d="M220,280 L292,280 L292,350 L220,350 Z" fill="#F5C3A6" />
+      <!-- Neck Shadow (Right side depth) -->
+      <path d="M256,280 L292,280 L292,350 L256,350 Z" fill="#E2A280" opacity="0.4" />
+      <!-- Chin Shadow -->
+      <path d="M220,280 C220,280 256,312 292,280 L292,298 C292,298 256,330 220,298 Z" fill="#E2A280" opacity="0.8" />
+
+      <!-- Face Base -->
+      <path d="M180,210 C180,150 200,140 256,140 C312,140 332,150 332,210 C332,270 305,305 256,305 C207,305 180,270 180,210 Z" fill="#F5C3A6" />
+      <!-- Face Shadow (Right side) -->
+      <path d="M256,140 C312,140 332,150 332,210 C332,270 305,305 256,305 Z" fill="#E2A280" opacity="0.35" />
+
+      <!-- Front Hair / Styled Swoop (Sharp, modern side-part) -->
+      <path d="M172,192 C170,142 210,105 266,105 C322,105 344,130 340,182 C324,162 304,146 266,146 C214,146 184,172 172,192 Z" fill="#1E293B" />
+      <!-- Hair Highlight -->
+      <path d="M220,116 C245,111 285,111 315,123 C295,117 255,115 225,123 Z" fill="#475569" />
+      <!-- Sideburns -->
+      <path d="M178,200 L184,220 L189,220 L184,200 Z" fill="#1E293B" />
+      <path d="M334,200 L328,220 L323,220 L328,200 Z" fill="#0F172A" />
+
+      <!-- Eyebrows -->
+      <!-- Left Eyebrow -->
+      <path d="M196,182 C206,174 222,174 232,180" stroke="#0F172A" stroke-width="4" stroke-linecap="round" fill="none" />
+      <!-- Right Eyebrow -->
+      <path d="M280,180 C290,174 306,174 316,182" stroke="#0F172A" stroke-width="4" stroke-linecap="round" fill="none" />
+
+      <!-- Eyes -->
+      <!-- Left Eye -->
+      <circle cx="216" cy="202" r="8" fill="#0F172A" />
+      <circle cx="213.5" cy="199.5" r="2.5" fill="#FFFFFF" />
+      <!-- Right Eye -->
+      <circle cx="296" cy="202" r="8" fill="#0F172A" />
+      <circle cx="293.5" cy="199.5" r="2.5" fill="#FFFFFF" />
+
+      <!-- Nose (Minimalist, clean vector path) -->
+      <path d="M256,212 L256,240 C256,244 252,246 248,246" stroke="#E2A280" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+      <!-- Glasses (Sleek, round acetate frames signaling IT competence) -->
+      <!-- Left Frame -->
+      <circle cx="216" cy="202" r="25" stroke="#0F172A" stroke-width="5" fill="none" />
+      <!-- Right Frame -->
+      <circle cx="296" cy="202" r="25" stroke="#0F172A" stroke-width="5" fill="none" />
+      <!-- Bridge -->
+      <path d="M241,202 L271,202" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
+      <!-- Frame Highlights (Diagonal glare) -->
+      <path d="M202,190 L222,210" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.4" />
+      <path d="M282,190 L302,210" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.4" />
+      <!-- Temples -->
+      <path d="M191,202 L174,198" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M321,202 L338,198" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
+
+      <!-- Smile (Warm, confident, and institutional) -->
+      <path d="M232,262 C242,276 270,276 280,262" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <!-- Under Lip Shadow -->
+      <path d="M248,280 C252,282 260,282 264,280" stroke="#E2A280" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+      <!-- Clothing (Smart, premium tech quarter-zip sweater) -->
+      <!-- Sweater Base -->
+      <path d="M120,440 C120,370 170,335 256,335 C342,335 392,370 392,440 L392,480 L120,480 Z" fill="#1E293B" />
+      <!-- Sweater Right Side Shadow -->
+      <path d="M256,335 C342,335 392,370 392,440 L392,480 L256,480 Z" fill="#0F172A" opacity="0.25" />
+
+      <!-- Left Shoulder Highlight -->
+      <path d="M125,435 C135,385 175,350 220,342" stroke="#475569" stroke-width="4" stroke-linecap="round" fill="none" />
+
+      <!-- Inner Shirt (Slate Blue, visible at collar opening) -->
+      <path d="M218,328 L250,355 L282,328 Z" fill="#475569" />
+      <!-- Inner Shirt Shadow -->
+      <path d="M250,355 L282,328 L250,328 Z" fill="#334155" />
+
+      <!-- Collar Flaps -->
+      <!-- Left Collar Flap -->
+      <path d="M210,320 L250,355 L250,420 L195,360 Z" fill="#334155" />
+      <!-- Right Collar Flap -->
+      <path d="M302,320 L250,355 L250,420 L307,360 Z" fill="#1E293B" />
+
+      <!-- Zipper Details (Crisp tech accents in Sky Blue) -->
+      <!-- Zipper Track -->
+      <path d="M248,355 L248,420" stroke="#475569" stroke-width="1.5" />
+      <path d="M252,355 L252,420" stroke="#334155" stroke-width="1.5" />
+      <!-- Zipper Pull (Bright Tech Accent: #38BDF8) -->
+      <path d="M250,355 L250,372" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+      <circle cx="250" cy="374" r="4.5" fill="#38BDF8" />
+
+    </g>
+  </g>
+</svg>
