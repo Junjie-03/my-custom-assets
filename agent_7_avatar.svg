@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definitions for clip paths and premium gradients -->
+  <defs>
+    <!-- Master Avatar Circular Clip (440px diameter, centered at 256,256) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+    
+    <!-- Soft shadow for glasses to add depth -->
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0A2540" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle (Strictly solid #E2F0D9, no patterns/decorations) -->
+  <circle cx="256" cy="256" r="220" fill="#E2F0D9" />
+
+  <!-- Character Portrait (Clipped to maintain perfect 440px circle boundary) -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Back Hair / Base Volume -->
+    <path d="M155,220 C155,115 205,90 256,90 C307,90 357,115 357,220 C357,270 340,280 340,280 L172,280 C172,280 155,270 155,220 Z" fill="#111625" />
+    
+    <!-- Shoulders & Body Base -->
+    <!-- Crisp White Shirt Collar Base -->
+    <path d="M210,340 L302,340 L320,480 L192,480 Z" fill="#E6F0FA" />
+    
+    <!-- Inner Shirt V-Neck Shadow -->
+    <path d="M256,395 L226,340 L286,340 Z" fill="#D2E4F6" />
+    <path d="M256,395 L240,340 L272,340 Z" fill="#FFFFFF" />
+
+    <!-- Gold Advisory Tie (Symbolizing Institutional Wealth/Advisory) -->
+    <path d="M251,375 L261,375 L266,465 L256,478 L246,465 Z" fill="#F2A900" />
+    <!-- Tie Knot -->
+    <path d="M249,370 L263,370 L260,385 L252,385 Z" fill="#D4AF37" />
+
+    <!-- Sharp Tailored Blazer - Left Side (Deep Navy #0A2540) -->
+    <path d="M226,350 L140,415 L115,480 L256,480 L256,390 Z" fill="#0A2540" />
+    <!-- Sharp Tailored Blazer - Right Side (Slightly darker tone for 3D depth) -->
+    <path d="M286,350 L372,415 L397,480 L256,480 L256,390 Z" fill="#061B30" />
+
+    <!-- Blazer Lapels -->
+    <!-- Left Lapel -->
+    <path d="M226,350 L256,415 L256,455 L195,390 Z" fill="#1A365D" />
+    <!-- Right Lapel -->
+    <path d="M286,350 L256,415 L256,455 L317,390 Z" fill="#0A2540" />
+
+    <!-- Gold Lapel Pin (AI Specialist Spark / Institutional Competence) -->
+    <path d="M188,405 L192,399 L196,405 L192,411 Z" fill="#F2A900" />
+
+    <!-- Neck -->
+    <path d="M226,280 L286,280 L282,360 L230,360 Z" fill="#FAD2B1" />
+    <!-- Neck Shadow (Crisp vector shadow under jawline) -->
+    <path d="M226,280 L286,280 L282,325 C256,345 230,325 226,280 Z" fill="#E5B291" />
+
+    <!-- Head / Face Shape -->
+    <path d="M180,215 C180,155 210,135 256,135 C302,135 332,155 332,215 C332,280 302,318 256,318 C210,318 180,280 180,215 Z" fill="#FAD2B1" />
+    
+    <!-- Face Shadow (Right side split for modern flat-vector depth) -->
+    <path d="M256,135 C302,135 332,155 332,215 C332,280 302,318 256,318 Z" fill="#E5B291" opacity="0.4" />
+
+    <!-- Ears -->
+    <path d="M182,215 C174,215 174,240 182,240 Z" fill="#FAD2B1" />
+    <path d="M330,215 C338,215 338,240 330,240 Z" fill="#E5B291" />
+
+    <!-- Modern, Tech-Professional Hairstyle (Sleek, sharp, dark navy/charcoal) -->
+    <!-- Front Hair Swoop & Side Framing -->
+    <path d="M174,200 C174,125 210,100 256,100 C302,100 338,125 338,200 C338,215 332,210 326,195 C312,155 292,138 256,138 C215,138 198,155 184,195 C178,210 174,215 174,200 Z" fill="#1E1E2F" />
+    <!-- Hair Highlights (Adding dimension and premium finish) -->
+    <path d="M190,125 C225,102 287,110 322,135 C295,122 245,122 208,150 C200,142 195,134 190,125 Z" fill="#3D3D5C" />
+
+    <!-- Eyebrows (Sharp, attentive) -->
+    <path d="M196,194 C204,186 218,188 226,193" stroke="#111625" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M286,193 C294,188 308,186 316,194" stroke="#111625" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Focused, warm, intelligent) -->
+    <!-- Left Eye -->
+    <path d="M202,212 C206,206 220,206 224,212 C220,218 206,218 202,212 Z" fill="#111625" />
+    <circle cx="215" cy="211" r="3" fill="#FFFFFF" />
+    <!-- Right Eye -->
+    <path d="M288,212 C292,206 306,206 310,212 C306,218 292,218 288,212 Z" fill="#111625" />
+    <circle cx="297" cy="211" r="3" fill="#FFFFFF" />
+
+    <!-- Minimalist Nose Shadow -->
+    <path d="M250,234 L256,254 L249,257" stroke="#E5B291" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Warm, Confident Smile -->
+    <path d="M234,274 C242,285 270,285 278,274" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Subtle Lip Highlight/Shadow -->
+    <path d="M248,287 C252,290 260,290 264,287" stroke="#E5B291" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Analyst Glasses (Signifying the "Anomaly Analyzer" role - Deep Navy #0A2540) -->
+    <g filter="url(#soft-shadow)">
+      <!-- Left Frame -->
+      <circle cx="213" cy="212" r="25" stroke="#0A2540" stroke-width="5" fill="none" />
+      <!-- Right Frame -->
+      <circle cx="299" cy="212" r="25" stroke="#0A2540" stroke-width="5" fill="none" />
+      <!-- Bridge -->
+      <path d="M238,212 L274,212" stroke="#0A2540" stroke-width="5" stroke-linecap="round" />
+      <!-- Temples/Sides -->
+      <path d="M188,212 L176,210" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+      <path d="M324,212 L336,210" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+      <!-- Glass Glare (Premium vector shine) -->
+      <path d="M198,198 L220,220" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+      <path d="M284,198 L306,220" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+    </g>
+
+  </g>
+</svg>
