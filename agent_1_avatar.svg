@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definitions for Clip Paths and Gradients -->
+  <defs>
+    <!-- Master Circular Mask for 36px Outer Padding (440px Diameter) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Solid Background Disc (Strictly No Patterns/Icons) -->
+  <circle cx="256" cy="256" r="220" fill="#FCE8E6" />
+
+  <!-- Main Character Group clipped to the avatar boundary -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- 1. Back Hair Layer (Provides depth behind ears and neck) -->
+    <path d="M 160 220 C 145 280, 175 350, 256 355 C 337 350, 367 280, 352 220 Z" fill="#1D1F27" />
+
+    <!-- 2. Neck & Shoulders Shadow -->
+    <path d="M 228 280 L 232 360 L 280 360 L 284 280 Z" fill="#E0A98C" />
+    <!-- Chin Shadow on Neck -->
+    <path d="M 228 280 C 228 280, 256 315, 284 280 C 284 298, 256 325, 228 280 Z" fill="#C89276" />
+
+    <!-- 3. Inner Shirt (Crisp White Collar & Blouse) -->
+    <path d="M 210 350 L 256 410 L 302 350 Z" fill="#FFFFFF" />
+    <path d="M 224 350 L 256 395 L 240 415 Z" fill="#E8EAED" />
+    <path d="M 288 350 L 256 395 L 272 415 Z" fill="#E8EAED" />
+
+    <!-- 4. Blazer / Outer Jacket (Brand Red #EA4335 & Tonal Shades) -->
+    <!-- Left Shoulder/Body -->
+    <path d="M 130 480 C 130 395, 185 345, 224 345 L 246 480 Z" fill="#EA4335" />
+    <!-- Right Shoulder/Body -->
+    <path d="M 382 480 C 382 395, 327 345, 288 345 L 266 480 Z" fill="#EA4335" />
+    
+    <!-- Left Lapel (Darker Red for depth) -->
+    <path d="M 224 345 L 250 415 L 225 480 L 185 480 Z" fill="#C5221F" />
+    <!-- Right Lapel -->
+    <path d="M 288 345 L 262 415 L 287 480 L 327 480 Z" fill="#C5221F" />
+
+    <!-- Lapel Pin (Gold/Yellow Accent representing Relations/Analyst Badge) -->
+    <circle cx="205" cy="410" r="7" fill="#FBBC05" />
+    <circle cx="205" cy="410" r="4" fill="#F9AB00" />
+
+    <!-- 5. Head & Face Structure -->
+    <!-- Ears -->
+    <circle cx="176" cy="235" r="14" fill="#FCD8C5" />
+    <circle cx="336" cy="235" r="14" fill="#FCD8C5" />
+    <!-- Gold Earrings (Minimalist, Professional) -->
+    <circle cx="172" cy="244" r="4" fill="#FBBC05" />
+    <circle cx="340" cy="244" r="4" fill="#FBBC05" />
+
+    <!-- Face Base -->
+    <path d="M 186 210 C 186 155, 326 155, 326 210 C 326 268, 296 308, 256 308 C 216 308, 186 268, 186 210 Z" fill="#FCD8C5" />
+    <!-- Face Soft Shadow (Left side for subtle 3D depth) -->
+    <path d="M 186 210 C 186 268, 216 308, 256 308 C 236 308, 200 280, 194 210 Z" fill="#E0A98C" opacity="0.4" />
+
+    <!-- 6. Face Details (Eyes, Expression, Glasses) -->
+    <!-- Warm Cheek Blush -->
+    <circle cx="202" cy="252" r="12" fill="#EA4335" opacity="0.15" />
+    <circle cx="310" cy="252" r="12" fill="#EA4335" opacity="0.15" />
+
+    <!-- Attentive, Sharp Eyes -->
+    <!-- Left Eye -->
+    <ellipse cx="216" cy="215" rx="13" ry="13" fill="#FFFFFF" />
+    <circle cx="218" cy="215" r="8" fill="#202124" />
+    <circle cx="221" cy="211" r="3" fill="#FFFFFF" />
+    <circle cx="214" cy="219" r="1.5" fill="#FFFFFF" opacity="0.7" />
+
+    <!-- Right Eye -->
+    <ellipse cx="296" cy="215" rx="13" ry="13" fill="#FFFFFF" />
+    <circle cx="294" cy="215" r="8" fill="#202124" />
+    <circle cx="291" cy="211" r="3" fill="#FFFFFF" />
+    <circle cx="298" cy="219" r="1.5" fill="#FFFFFF" opacity="0.7" />
+
+    <!-- Elegant Eyebrows -->
+    <path d="M 198 196 C 204 188, 222 188, 230 195" stroke="#2D303D" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 282 195 C 290 188, 308 188, 314 196" stroke="#2D303D" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Minimalist, Friendly Nose -->
+    <path d="M 252 238 C 252 238, 256 244, 260 238" stroke="#E0A98C" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Warm, Confident Open Smile (Institutional Competence) -->
+    <path d="M 236 260 C 236 260, 256 284, 276 260 Z" fill="#800F0F" />
+    <path d="M 240 261 C 246 268, 266 268, 272 261 Z" fill="#FFFFFF" />
+    <path d="M 232 258 Q 256 261 280 258" stroke="#C5221F" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Stylish Round Glasses (The "Analyst" Signature in Brand Red) -->
+    <!-- Left Frame -->
+    <circle cx="216" cy="215" r="27" stroke="#EA4335" stroke-width="4.5" fill="none" />
+    <!-- Right Frame -->
+    <circle cx="296" cy="215" r="27" stroke="#EA4335" stroke-width="4.5" fill="none" />
+    <!-- Bridge -->
+    <path d="M 243 215 Q 256 209 269 215" stroke="#EA4335" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <!-- Temples/Sides -->
+    <path d="M 189 215 L 174 212" stroke="#EA4335" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 323 215 L 338 212" stroke="#EA4335" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <!-- Glass Glare/Reflection -->
+    <path d="M 202 202 L 214 190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+    <path d="M 282 202 L 294 190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4" />
+
+    <!-- 7. Front Hair Layer (Modern Asymmetrical Bob) -->
+    <!-- Left Swoop (Tucked behind ear) -->
+    <path d="M 230 118 C 175 118, 145 160, 145 240 C 145 275, 155 295, 168 305 C 166 280, 172 245, 188 215 C 202 190, 215 180, 230 172 Z" fill="#2D303D" />
+    
+    <!-- Right Swoop (Flowing, framing face) -->
+    <path d="M 230 118 C 305 118, 360 155, 360 235 C 360 285, 342 315, 328 325 C 332 290, 328 245, 302 210 C 282 182, 255 172, 230 172 Z" fill="#2D303D" />
+
+    <!-- Hair Highlights (Sleek Vector Sheen) -->
+    <path d="M 255 130 C 290 130, 325 155, 335 190 C 330 172, 305 148, 265 142 Z" fill="#FFFFFF" opacity="0.15" />
+    <path d="M 210 132 C 190 142, 172 165, 168 190 C 172 172, 188 152, 215 146 Z" fill="#FFFFFF" opacity="0.15" />
+
+    <!-- Individual Hair Strands for Polish -->
+    <path d="M 148 240 C 144 260, 148 280, 154 290 C 152 270, 150 250, 148 240 Z" fill="#1D1F27" />
+    <path d="M 358 235 C 362 255, 358 275, 352 285 C 354 265, 356 245, 358 235 Z" fill="#1D1F27" />
+
+    <!-- Soft Shadow from Hair onto Forehead -->
+    <path d="M 175 210 C 185 190, 210 178, 230 172 C 255 172, 280 180, 302 210 C 290 195, 270 185, 245 182 C 220 180, 195 192, 175 210 Z" fill="#000000" opacity="0.08" />
+
+  </g>
+</svg>
