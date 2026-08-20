@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Clip path to keep everything perfectly within the 440px diameter circle (36px padding) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+
+    <!-- Gradients for subtle, premium depth -->
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE3D1" />
+      <stop offset="100%" stop-color="#F9C5A9" />
+    </linearGradient>
+
+    <linearGradient id="skin-shadow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAA380" />
+      <stop offset="100%" stop-color="#D58660" />
+    </linearGradient>
+
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D2E2A" />
+      <stop offset="70%" stop-color="#231A18" />
+      <stop offset="100%" stop-color="#150F0E" />
+    </linearGradient>
+
+    <linearGradient id="hair-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F27A6E" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#EA4335" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="jacket-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5B4C" />
+      <stop offset="100%" stop-color="#EA4335" />
+    </linearGradient>
+
+    <linearGradient id="jacket-shadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5221F" />
+      <stop offset="100%" stop-color="#961412" />
+    </linearGradient>
+
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDF79" />
+      <stop offset="100%" stop-color="#F2B200" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Disc (Strictly solid #FCE8E6, 440px diameter centered) -->
+  <circle cx="256" cy="256" r="220" fill="#FCE8E6" />
+
+  <!-- Character Portrait Group clipped to the avatar circle -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- 1. Back Hair (Provides depth behind neck/shoulders) -->
+    <path d="M160,220 C160,310 200,340 256,340 C312,340 352,310 352,220 C352,200 340,180 340,180 L172,180 C172,180 160,200 160,220 Z" fill="#1D1513" />
+
+    <!-- 2. Neck & Collarbone -->
+    <path d="M220,250 L292,250 L292,330 L220,330 Z" fill="url(#skin-shadow-grad)" />
+    <!-- Neck Highlight/Front -->
+    <path d="M228,250 C228,250 256,290 284,250 L284,320 C256,335 228,320 228,320 Z" fill="url(#skin-grad)" />
+    <!-- Shadow cast by chin -->
+    <path d="M228,250 C240,265 272,265 284,250 C284,250 288,272 256,275 C224,272 228,250 228,250 Z" fill="#E2926D" opacity="0.8" />
+
+    <!-- 3. Clothing (Modern Tech-Creative Blazer & Inner Top) -->
+    <!-- Inner Dark Charcoal Top -->
+    <path d="M200,320 L312,320 L312,476 L200,476 Z" fill="#2D3748" />
+    <!-- Inner Top Collar Line (V-Neck) -->
+    <path d="M216,320 L296,320 L256,370 Z" fill="#1A202C" />
+    <!-- Crisp White Inner Collar Accent -->
+    <path d="M240,320 L272,320 L256,340 Z" fill="#FFFFFF" />
+
+    <!-- Main Red Blazer (Left and Right Shoulders) -->
+    <!-- Left Shoulder/Body -->
+    <path d="M110,476 C110,410 145,335 210,320 L256,390 L215,476 Z" fill="url(#jacket-shadow)" />
+    <!-- Right Shoulder/Body -->
+    <path d="M402,476 C402,410 367,335 302,320 L256,390 L297,476 Z" fill="url(#jacket-grad)" />
+
+    <!-- Sharp Blazer Lapels -->
+    <!-- Left Lapel -->
+    <path d="M210,320 L256,390 L245,476 L185,476 Z" fill="#B31B18" />
+    <path d="M210,320 L256,390 L240,450 L195,370 Z" fill="#EA4335" />
+    <!-- Right Lapel (Overlapping for modern asymmetric look) -->
+    <path d="M302,320 L256,390 L267,476 L327,476 Z" fill="url(#jacket-grad)" />
+    <path d="M302,320 L256,390 L272,450 L317,370 Z" fill="#FF5B4C" />
+
+    <!-- Elegant Gold Spark Lapel Pin (Symbol of AI Copilot Excellence) -->
+    <path d="M305,395 L308,387 L316,384 L308,381 L305,373 L302,381 L294,384 L302,387 Z" fill="url(#gold-grad)" />
+    <circle cx="305" cy="384" r="1.5" fill="#FFFFFF" />
+
+    <!-- 4. Head & Face -->
+    <!-- Ears -->
+    <circle cx="184" cy="215" r="16" fill="#EAA380" />
+    <circle cx="184" cy="215" r="10" fill="#D58660" />
+    <circle cx="328" cy="215" r="16" fill="url(#skin-grad)" />
+    <circle cx="328" cy="215" r="10" fill="#EAA380" />
+
+    <!-- Face Base Shape -->
+    <path d="M186,190 C186,145 212,130 256,130 C300,130 326,145 326,190 C326,242 298,276 256,276 C214,276 186,242 186,190 Z" fill="url(#skin-grad)" />
+    
+    <!-- Face Shadow (Left side for 3D vector depth) -->
+    <path d="M186,190 C186,145 212,130 256,130 C256,130 215,170 215,220 C215,255 235,270 256,276 C214,276 186,242 186,190 Z" fill="#F3B293" opacity="0.6" />
+
+    <!-- Soft Cheek Blush -->
+    <ellipse cx="206" cy="232" rx="14" ry="8" fill="#EA4335" opacity="0.15" />
+    <ellipse cx="306" cy="232" rx="14" ry="8" fill="#EA4335" opacity="0.12" />
+
+    <!-- 5. Face Features (Attentive, Warm, Sharp) -->
+    <!-- Eyebrows -->
+    <path d="M202,188 C208,181 222,180 232,185" fill="none" stroke="#2D2522" stroke-width="4" stroke-linecap="round" />
+    <path d="M310,188 C304,181 290,180 280,185" fill="none" stroke="#2D2522" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Eyes (Focused, Friendly, Intelligent) -->
+    <!-- Left Eye -->
+    <ellipse cx="218" cy="204" rx="11" ry="11" fill="#FFFFFF" />
+    <ellipse cx="220" cy="204" rx="7" ry="7" fill="#3D2E2A" />
+    <circle cx="222" cy="201" r="2.5" fill="#FFFFFF" /> <!-- Catchlight -->
+    <path d="M205,202 C210,195 226,195 231,202" fill="none" stroke="#1D1513" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Right Eye -->
+    <ellipse cx="294" cy="204" rx="11" ry="11" fill="#FFFFFF" />
+    <ellipse cx="292" cy="204" rx="7" ry="7" fill="#3D2E2A" />
+    <circle cx="294" cy="201" r="2.5" fill="#FFFFFF" /> <!-- Catchlight -->
+    <path d="M281,202 C286,195 302,195 307,202" fill="none" stroke="#1D1513" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Nose (Minimalist, elegant shadow) -->
+    <path d="M250,210 L256,234 L248,238" fill="none" stroke="#D58660" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Mouth (Warm, confident, genuine smile) -->
+    <!-- Mouth Interior & Teeth -->
+    <path d="M234,248 C234,248 240,268 256,268 C272,268 278,248 278,248 Z" fill="#8C1D18" />
+    <path d="M237,249 C245,254 267,254 275,249 C272,255 267,258 256,258 C245,258 240,255 237,249 Z" fill="#FFFFFF" /> <!-- Teeth -->
+    <path d="M244,262 C248,265 264,265 268,262" fill="none" stroke="#FF8A80" stroke-width="2" stroke-linecap="round" /> <!-- Tongue Accent -->
+    <!-- Outline/Lip Line -->
+    <path d="M232,247 C240,253 272,253 280,247" fill="none" stroke="#5C100C" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- 6. Professional Glasses (Sleek, Modern, Dark Charcoal Frames) -->
+    <!-- Left Frame -->
+    <rect x="194" y="186" width="48" height="38" rx="19" fill="none" stroke="#2D3748" stroke-width="4.5" />
+    <!-- Right Frame -->
+    <rect x="270" y="186" width="48" height="38" rx="19" fill="none" stroke="#2D3748" stroke-width="4.5" />
+    <!-- Bridge -->
+    <path d="M242,201 C248,198 264,198 270,201" fill="none" stroke="#2D3748" stroke-width="4.5" />
+    <!-- Temple Accents (Hinges) -->
+    <path d="M194,200 L186,198" fill="none" stroke="#2D3748" stroke-width="4" stroke-linecap="round" />
+    <path d="M318,200 L326,198" fill="none" stroke="#2D3748" stroke-width="4" stroke-linecap="round" />
+    <!-- Lens Glare (Subtle white diagonal reflection) -->
+    <path d="M202,214 L226,190" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25" />
+    <path d="M278,214 L302,190" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25" />
+
+    <!-- 7. Front Hair (Sleek, Sharp, Modern Bob with Cohesive Highlights) -->
+    <!-- Hair Base Volume -->
+    <path d="M256,112 C180,112 154,160 154,224 C154,250 162,270 172,280 C176,260 178,230 188,200 C194,180 210,154 236,144 C244,141 254,140 260,140 C276,140 296,148 312,164 C328,180 336,204 336,230 C336,260 340,275 344,280 C354,270 358,250 358,224 C358,160 332,112 256,112 Z" fill="url(#hair-grad)" />
+    
+    <!-- Dynamic Sweeping Bangs (Overlapping the forehead for depth) -->
+    <path d="M260,140 C220,140 192,175 186,210 C196,185 218,165 250,160 C274,156 298,164 314,180 C324,190 330,205 332,220 C332,190 320,160 296,148 C284,142 272,140 260,140 Z" fill="#1D1513" />
+    
+    <!-- Warm Red/Copper Stylized Highlights (Tying into the GE/Marketing Red) -->
+    <path d="M264,142 C290,142 318,155 330,185 C316,168 292,158 268,158 C252,158 234,164 220,174 C234,158 250,142 264,142 Z" fill="url(#hair-highlight)" />
+    <path d="M184,195 C176,220 174,250 172,270 C170,250 170,220 178,195 C180,190 182,190 184,195 Z" fill="url(#hair-highlight)" />
+
+    <!-- Sharp Hair Strands/Details for a premium vector finish -->
+    <path d="M210,148 C180,170 166,205 164,245" fill="none" stroke="#1D1513" stroke-width="2" stroke-linecap="round" />
+    <path d="M280,146 C310,165 326,195 332,235" fill="none" stroke="#1D1513" stroke-width="2" stroke-linecap="round" />
+
+  </g>
+</svg>
