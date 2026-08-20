@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to keep the avatar perfectly within the 440px circle (36px padding) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Solid Background Disc -->
+  <circle cx="256" cy="256" r="220" fill="#E2F0D9" />
+
+  <!-- Character Wrapper with Clip Path -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Back Hair / Hair Base -->
+    <path d="M172 230 C172 140 200 115 256 115 C312 115 340 140 340 230 C340 280 325 305 320 310 L192 310 C187 305 172 280 172 230 Z" fill="#1D1B26" />
+
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <path d="M180 220 C170 220 170 250 182 255 Z" fill="#D98A5F" />
+    <path d="M178 228 C174 228 174 242 180 245 Z" fill="#C37349" />
+    <!-- Right Ear -->
+    <path d="M332 220 C342 220 342 250 330 255 Z" fill="#D98A5F" />
+    <path d="M334 228 C338 228 338 242 332 245 Z" fill="#C37349" />
+
+    <!-- Gold Earrings -->
+    <circle cx="175" cy="250" r="5" fill="#F2A93B" />
+    <circle cx="337" cy="250" r="5" fill="#F2A93B" />
+
+    <!-- Neck -->
+    <path d="M220 280 C220 340 236 360 256 360 C276 360 292 340 292 280 Z" fill="#D98A5F" />
+    <!-- Neck Shadow (Vertical split for modern vector depth) -->
+    <path d="M220 280 C220 340 236 360 256 360 L256 280 Z" fill="#C37349" />
+    <!-- Deep Chin Shadow -->
+    <path d="M216 285 C230 305 282 305 296 285 C280 315 232 315 216 285 Z" fill="#A85B34" />
+
+    <!-- Face Base -->
+    <path d="M186 230 C186 170 210 145 256 145 C302 145 326 170 326 230 C326 285 295 315 256 315 C217 315 186 285 186 230 Z" fill="#D98A5F" />
+    
+    <!-- Face Shadow (Left side, elegant curved vector shadow) -->
+    <path d="M186 230 C186 170 210 145 256 145 C240 170 235 250 256 315 C217 315 186 285 186 230 Z" fill="#C37349" />
+
+    <!-- Cheek Blush (Adds warmth and approachability) -->
+    <ellipse cx="202" cy="255" rx="10" ry="5" fill="#E27A65" opacity="0.25" />
+    <ellipse cx="310" cy="255" rx="10" ry="5" fill="#E27A65" opacity="0.25" />
+
+    <!-- Nose -->
+    <path d="M252 238 C252 250 250 254 258 254" stroke="#C37349" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M256 240 C257 240 258 243 257 246" stroke="#FFE3D1" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+    <!-- Mouth (Warm, confident, open-friendly smile) -->
+    <path d="M232 272 C232 272 236 296 256 296 C276 296 280 272 280 272 Z" fill="#5C131A" />
+    <path d="M236 273 C244 281 268 281 276 273 Z" fill="#FFFFFF" />
+    <path d="M244 302 C250 304 262 304 268 302" stroke="#C37349" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Smiling, warm arches) -->
+    <path d="M212 223 C217 218 227 218 232 223" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M280 223 C285 218 295 218 300 223" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyebrows -->
+    <path d="M204 196 C214 190 228 191 236 197" stroke="#1D1B26" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M276 197 C284 191 298 190 308 196" stroke="#1D1B26" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Sharp Modern Glasses (Signifies focus and competence) -->
+    <!-- Left Frame -->
+    <rect x="200" y="202" width="44" height="38" rx="14" stroke="#0A2540" stroke-width="4" fill="none" />
+    <!-- Right Frame -->
+    <rect x="268" y="202" width="44" height="38" rx="14" stroke="#0A2540" stroke-width="4" fill="none" />
+    <!-- Bridge -->
+    <path d="M244 218 L268 218" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+    <!-- Temples -->
+    <path d="M200 216 L184 216" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+    <path d="M312 216 L328 216" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+    <!-- Lens Highlights -->
+    <path d="M206 210 L222 210 L212 232 L204 232 Z" fill="#FFFFFF" opacity="0.2" />
+    <path d="M274 210 L290 210 L280 232 L272 232 Z" fill="#FFFFFF" opacity="0.2" />
+
+    <!-- Front Hair / Sweeping Bangs -->
+    <path d="M172 210 C172 140 205 110 256 110 C315 110 342 145 342 210 C342 220 335 215 330 200 C310 155 260 145 210 175 C185 190 175 205 172 210 Z" fill="#2D2B36" />
+    <!-- Hair Highlights & Flow Lines -->
+    <path d="M220 122 C240 118 270 118 290 122 C280 126 250 128 220 122 Z" fill="#4E4B5C" />
+    <path d="M310 140 C325 160 332 185 332 210" stroke="#4E4B5C" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M195 145 C185 165 180 185 180 210" stroke="#4E4B5C" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Torso / Clothing (Branch Operations Manager Attire) -->
+    <!-- Base Blazer (Deep Navy) -->
+    <path d="M140 460 C140 375 185 345 256 345 C327 345 372 375 372 460 Z" fill="#0A2540" />
+    
+    <!-- Blazer Left-Side Split Shadow -->
+    <path d="M140 460 C140 375 185 345 256 345 L256 460 Z" fill="#05182B" opacity="0.3" />
+
+    <!-- Inner Shirt (Crisp Light Blue/White) -->
+    <path d="M216 345 L256 415 L296 345 Z" fill="#E6F0FA" />
+    <!-- Inner Shirt Shadow -->
+    <path d="M232 373 L256 415 L280 373 Z" fill="#C8D7E6" />
+
+    <!-- Shirt Collar -->
+    <path d="M216 345 L242 385 L256 345 Z" fill="#FFFFFF" />
+    <path d="M296 345 L270 385 L256 345 Z" fill="#FFFFFF" />
+
+    <!-- Blazer Lapels -->
+    <!-- Left Lapel -->
+    <path d="M190 355 L236 345 L256 415 L215 460 Z" fill="#143354" />
+    <!-- Right Lapel -->
+    <path d="M322 355 L276 345 L256 415 L297 460 Z" fill="#0A2540" />
+
+    <!-- Gold Institutional Lapel Pin (Symbol of competence & banking role) -->
+    <circle cx="288" cy="385" r="5" fill="#F2A93B" />
+    <circle cx="288" cy="385" r="2" fill="#FFFFFF" opacity="0.5" />
+
+  </g>
+</svg>
