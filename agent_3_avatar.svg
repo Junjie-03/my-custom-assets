@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Circular Clip Path (440px diameter, centered) -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+    
+    <!-- Smooth Linear Gradients for Premium Depth -->
+    <linearGradient id="jacket-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFEDD5" />
+      <stop offset="100%" stop-color="#FDBA74" />
+    </linearGradient>
+
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Container with Clip Path -->
+  <g clip-path="url(#avatar-clip)">
+    <!-- Clean, Smooth Solid Background Disc -->
+    <circle cx="256" cy="256" r="220" fill="#F8FAFC" />
+
+    <!-- Neck & Throat (Base & Shadow) -->
+    <path d="M 220 280 L 220 370 C 220 370, 256 395, 292 370 L 292 280 Z" fill="#E28743" />
+    <path d="M 226 280 L 226 360 C 226 360, 256 382, 286 360 L 286 280 Z" fill="url(#skin-grad)" />
+    <!-- Deep Neck Shadow under Chin -->
+    <path d="M 220 300 C 220 300, 256 335, 292 300 C 292 318, 280 355, 256 355 C 232 355, 220 318, 220 300 Z" fill="#C2410C" opacity="0.15" />
+
+    <!-- Inner Technical Shirt -->
+    <path d="M 232 330 L 256 372 L 280 330 Z" fill="#475569" />
+    
+    <!-- High-Collar Technical Jacket (Left & Right Sides) -->
+    <!-- Left Shoulder & Collar -->
+    <path d="M 215 310 C 215 310, 208 365, 256 390 L 256 480 L 110 480 C 110 410, 160 350, 215 310 Z" fill="url(#jacket-grad)" />
+    <!-- Right Shoulder & Collar -->
+    <path d="M 297 310 C 297 310, 304 365, 256 390 L 256 480 L 402 480 C 402 410, 352 350, 297 310 Z" fill="url(#jacket-grad)" />
+
+    <!-- Jacket Center Zipper Track & Orange Accent Pull -->
+    <line x1="256" y1="390" x2="256" y2="480" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+    <line x1="256" y1="395" x2="256" y2="480" stroke="#F97316" stroke-width="2" stroke-linecap="round" />
+    <!-- Zipper Slider -->
+    <rect x="251" y="386" width="10" height="16" rx="3" fill="#475569" />
+    <rect x="253" y="390" width="6" height="10" rx="1" fill="#F97316" />
+
+    <!-- Shoulder Seam Highlights (Adds Dimension) -->
+    <path d="M 140 480 C 140 430, 178 380, 212 368" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <path d="M 372 480 C 372 430, 334 380, 300 368" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Integrated NOC Signal Badge (Left Chest) -->
+    <circle cx="170" cy="430" r="18" fill="#0F172A" />
+    <!-- Clean Waveform / Signal Bars (Noise Reduction Metaphor) -->
+    <rect x="161" y="424" width="3" height="12" rx="1.5" fill="#475569" />
+    <rect x="168" y="418" width="3" height="24" rx="1.5" fill="#F97316" />
+    <rect x="175" y="422" width="3" height="16" rx="1.5" fill="#10B981" />
+
+    <!-- Head & Face Structure -->
+    <!-- Ears -->
+    <circle cx="172" cy="220" r="16" fill="#E28743" />
+    <circle cx="174" cy="220" r="12" fill="url(#skin-grad)" />
+    <circle cx="340" cy="220" r="16" fill="#E28743" />
+    <circle cx="338" cy="220" r="12" fill="url(#skin-grad)" />
+
+    <!-- Face Base -->
+    <path d="M 176 210 C 176 135, 336 135, 336 210 C 336 282, 296 312, 256 312 C 216 312, 176 282, 176 210 Z" fill="url(#skin-grad)" />
+
+    <!-- Soft Cheek Warmth (Attentive & Friendly) -->
+    <circle cx="202" cy="252" r="14" fill="#F97316" opacity="0.12" />
+    <circle cx="310" cy="252" r="14" fill="#F97316" opacity="0.12" />
+
+    <!-- Sharp, Focused Eyes -->
+    <g id="eyes">
+      <!-- Left Eye -->
+      <ellipse cx="216" cy="214" rx="9" ry="11" fill="#0F172A" />
+      <circle cx="213" cy="210" r="3.5" fill="#FFFFFF" />
+      <circle cx="219" cy="217" r="1.5" fill="#FFFFFF" opacity="0.8" />
+      <!-- Right Eye -->
+      <ellipse cx="296" cy="214" rx="9" ry="11" fill="#0F172A" />
+      <circle cx="293" cy="210" r="3.5" fill="#FFFFFF" />
+      <circle cx="299" cy="217" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    </g>
+
+    <!-- Sleek, Modern Glasses (Analytical/Sharp Persona) -->
+    <g id="glasses" opacity="0.95">
+      <!-- Left Frame -->
+      <rect x="190" y="196" width="50" height="38" rx="14" fill="none" stroke="#0F172A" stroke-width="4" />
+      <!-- Right Frame -->
+      <rect x="272" y="196" width="50" height="38" rx="14" fill="none" stroke="#0F172A" stroke-width="4" />
+      <!-- Bridge -->
+      <path d="M 240 208 L 272 208" fill="none" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+      <!-- Temples -->
+      <path d="M 190 208 L 172 208" fill="none" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+      <path d="M 322 208 L 340 208" fill="none" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+      <!-- Lens Reflection Diagonal -->
+      <path d="M 194 202 L 214 202 C 204 224, 196 224, 194 202 Z" fill="#FFFFFF" opacity="0.25" />
+      <path d="M 276 202 L 296 202 C 286 224, 278 224, 276 202 Z" fill="#FFFFFF" opacity="0.25" />
+    </g>
+
+    <!-- Eyebrows (Attentive & Defined) -->
+    <path d="M 196 188 C 204 182, 222 184, 228 191" fill="none" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 316 188 C 308 182, 290 184, 284 191" fill="none" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Minimalist Nose -->
+    <path d="M 252 224 L 252 242 C 252 246, 256 248, 260 246" fill="none" stroke="#E28743" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Warm, Confident Smile -->
+    <path d="M 234 268 C 242 278, 270 278, 278 268" fill="none" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Modern, Textured Hair Crop -->
+    <g id="hair">
+      <!-- Hair Shadow on Forehead -->
+      <path d="M 168 200 C 178 190, 187 185, 202 185 C 220 185, 235 195, 256 190 C 275 195, 290 185, 310 185 C 325 185, 334 190, 344 200 C 330 208, 310 202, 256 206 C 202 202, 182 208, 168 200 Z" fill="#C2410C" opacity="0.2" />
+      <!-- Main Hair Volume -->
+      <path d="M 168 200 C 162 135, 205 110, 256 110 C 307 110, 350 135, 344 200 C 334 188, 324 182, 310 182 C 290 182, 274 192, 256 188 C 238 192, 222 182, 202 182 C 188 182, 178 188, 168 200 Z" fill="url(#hair-grad)" />
+      <!-- Hair Highlights (Sleek Vector Planes) -->
+      <path d="M 215 122 C 235 116, 270 116, 290 122 C 270 128, 235 128, 215 122 Z" fill="#475569" opacity="0.6" />
+      <path d="M 185 155 C 200 145, 222 145, 235 150 C 220 156, 200 156, 185 155 Z" fill="#475569" opacity="0.6" />
+    </g>
+
+    <!-- NOC Operator Headset (Asymmetric, Left-Ear Focused) -->
+    <g id="headset">
+      <!-- Headset Band -->
+      <path d="M 200 132 C 215 116, 245 106, 275 108 C 305 110, 324 124, 334 142" fill="none" stroke="#334155" stroke-width="5" stroke-linecap="round" />
+      
+      <!-- Ear Piece Mounting Bracket (Right Side of Head / Viewer's Right) -->
+      <rect x="330" y="180" width="10" height="36" rx="5" fill="#475569" transform="rotate(12 335 198)" />
+      
+      <!-- Main Ear Cushion -->
+      <ellipse cx="346" cy="214" rx="15" ry="25" fill="#1E293B" transform="rotate(12 346 214)" />
+      <!-- Inner Ear Cup Accent -->
+      <ellipse cx="346" cy="214" rx="9" ry="17" fill="#0F172A" transform="rotate(12 346 214)" />
+      <!-- Active Status Indicator (Glowing Orange Core) -->
+      <circle cx="346" cy="214" r="4" fill="#F97316" />
+      
+      <!-- Sleek Microphone Arm -->
+      <path d="M 346 224 C 346 262, 312 286, 282 280" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+      <!-- Microphone Capsule -->
+      <path d="M 282 280 L 272 278" fill="none" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
+      <!-- Noise-Reduction Active LED (Soft Green Signal) -->
+      <circle cx="271" cy="278" r="2" fill="#10B981" />
+    </g>
+  </g>
+</svg>
