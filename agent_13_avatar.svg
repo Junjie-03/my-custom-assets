@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to keep the entire character perfectly inside the 440px circle -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Solid Background Disc (Strictly no patterns, rings, or decorative elements) -->
+  <circle cx="256" cy="256" r="220" fill="#E2F0D9" />
+
+  <!-- Character Portrait Group -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Back Hair (Provides depth behind the ears and neck) -->
+    <path d="M165 195 C155 235, 175 295, 210 315 L302 315 C337 295, 357 235, 347 195 Z" fill="#06182B" />
+
+    <!-- Shoulders & Blazer Base -->
+    <path d="M80 480 C80 410, 130 360, 200 340 L312 340 C382 360, 432 410, 432 480 Z" fill="#0A2540" />
+
+    <!-- Shoulder Highlights (Adds premium vector dimension) -->
+    <path d="M95 475 C105 435, 135 395, 180 365" stroke="#1C3D5A" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M417 475 C407 435, 377 395, 332 365" stroke="#1C3D5A" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Inner Crisp White Shirt -->
+    <path d="M210 320 L256 395 L302 320 Z" fill="#FFFFFF" />
+    
+    <!-- Inner Shirt Shadow -->
+    <path d="M210 320 L256 395 L275 365 L230 325 Z" fill="#E2E8F0" />
+
+    <!-- Gold Necklace & Pendant (Institutional/Trust Detail) -->
+    <path d="M224 325 C224 365, 288 365, 288 325" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round" />
+    <circle cx="256" cy="360" r="8" fill="#F59E0B" />
+    <path d="M256 355 L258 359 L262 360 L258 361 L256 365 L254 361 L250 360 L254 359 Z" fill="#0A2540" />
+
+    <!-- Neck -->
+    <path d="M224 260 L288 260 L288 340 L224 340 Z" fill="#F7C59F" />
+    
+    <!-- Neck Shadow (Crisp vector shadow under chin) -->
+    <path d="M224 260 C224 260, 224 310, 214 330 L298 330 C288 310, 288 260, 288 260 Z" fill="#E2A375" />
+
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <path d="M182 195 C172 195, 168 215, 182 225 Z" fill="#F7C59F" />
+    <path d="M182 200 C175 200, 172 212, 182 218 Z" fill="#E2A375" />
+    <!-- Right Ear -->
+    <path d="M330 195 C340 195, 344 215, 330 225 Z" fill="#F7C59F" />
+    <path d="M330 200 C337 200, 340 212, 330 218 Z" fill="#E2A375" />
+
+    <!-- Face Base -->
+    <path d="M180 195 C180 135, 332 135, 332 195 C332 255, 305 285, 256 285 C207 285, 180 255, 180 195 Z" fill="#F7C59F" />
+
+    <!-- Face Shadows & Highlights (Soft warmth and dimension) -->
+    <!-- Cheek Blush -->
+    <circle cx="205" cy="235" r="16" fill="#E2A375" opacity="0.25" />
+    <circle cx="307" cy="235" r="16" fill="#E2A375" opacity="0.25" />
+    <!-- Chin Shadow -->
+    <path d="M210 270 C230 292, 282 292, 302 270 C285 298, 227 298, 210 270 Z" fill="#E2A375" />
+    <!-- Forehead Highlight -->
+    <ellipse cx="256" cy="150" rx="25" ry="8" fill="#FDE8D7" opacity="0.4" />
+    <!-- Cheek Highlights -->
+    <circle cx="210" cy="215" r="6" fill="#FDE8D7" opacity="0.4" />
+    <circle cx="302" cy="215" r="6" fill="#FDE8D7" opacity="0.4" />
+
+    <!-- Eyes (Attentive, sharp, friendly) -->
+    <!-- Left Eye -->
+    <circle cx="222" cy="205" r="7.5" fill="#0A2540" />
+    <circle cx="225" cy="202" r="2.5" fill="#FFFFFF" />
+    <!-- Right Eye -->
+    <circle cx="290" cy="205" r="7.5" fill="#0A2540" />
+    <circle cx="293" cy="202" r="2.5" fill="#FFFFFF" />
+
+    <!-- Eyebrows (Sharp, confident) -->
+    <path d="M210 190 C215 186, 227 186, 235 191" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M277 191 C285 186, 297 186, 302 190" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Nose (Minimalist, elegant) -->
+    <path d="M252 218 C252 224, 255 227, 259 227" stroke="#E2A375" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Mouth (Warm, reassuring smile) -->
+    <path d="M234 248 C240 260, 272 260, 278 248" stroke="#0A2540" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M248 262 C252 264, 260 264, 264 262" stroke="#E2A375" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Glasses (Suggests focus, document analysis, and competence) -->
+    <!-- Left Frame -->
+    <rect x="198" y="183" width="48" height="44" rx="16" stroke="#0A2540" stroke-width="5" fill="none" />
+    <!-- Right Frame -->
+    <rect x="266" y="183" width="48" height="44" rx="16" stroke="#0A2540" stroke-width="5" fill="none" />
+    <!-- Bridge -->
+    <path d="M246 205 L266 205" stroke="#0A2540" stroke-width="5" stroke-linecap="round" />
+    <!-- Temples (Sides) -->
+    <path d="M198 205 L182 205" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+    <path d="M314 205 L330 205" stroke="#0A2540" stroke-width="4" stroke-linecap="round" />
+    <!-- Lens Glare (Premium vector sheen) -->
+    <path d="M202 188 L222 188 L208 222 L202 222 Z" fill="#FFFFFF" opacity="0.2" />
+    <path d="M272 188 L292 188 L278 222 L272 222 Z" fill="#FFFFFF" opacity="0.2" />
+
+    <!-- Front Hair (Stylized, modern side-parted bob) -->
+    <path d="M175 250 C165 210, 170 140, 220 105 C240 95, 275 95, 305 110 C335 130, 345 170, 345 210 C345 255, 330 275, 325 270 C320 265, 328 240, 328 215 C328 175, 310 145, 275 140 C240 135, 210 155, 198 185 C188 210, 188 245, 182 260 C180 265, 176 260, 175 250 Z" fill="#0A2540" />
+    
+    <!-- Hair Highlights (Adds sleekness and depth) -->
+    <path d="M250 102 C275 102, 305 115, 325 135 C315 125, 290 115, 265 112 C245 110, 225 112, 215 118 C225 110, 238 103, 250 102 Z" fill="#4B6B94" />
+    <path d="M190 165 C182 185, 182 210, 185 230 C183 210, 183 185, 192 170 Z" fill="#4B6B94" />
+
+    <!-- Subtle Hair Shadow on Face -->
+    <path d="M192 230 C195 200, 210 170, 240 155 C260 145, 295 145, 310 160 C325 175, 322 205, 318 225 C322 225, 328 205, 320 170 C305 150, 260 150, 240 160 C215 175, 200 205, 196 235 Z" fill="#E2A375" opacity="0.4" />
+
+    <!-- Blazer Lapels (Sharp, professional tailoring) -->
+    <!-- Left Lapel -->
+    <path d="M190 345 L235 425 L256 425 L215 340 Z" fill="#1C3D5A" />
+    <!-- Right Lapel -->
+    <path d="M322 345 L277 425 L256 425 L297 340 Z" fill="#1C3D5A" />
+
+    <!-- Gold Institutional Pin (On Left Lapel) -->
+    <path d="M198 375 L204 365 L210 375 L204 385 Z" fill="#F59E0B" />
+    <circle cx="204" cy="370" r="1.5" fill="#FFFFFF" />
+
+  </g>
+</svg>
