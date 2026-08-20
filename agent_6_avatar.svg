@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Master Clip Path to keep the avatar perfectly circular and clean -->
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+    
+    <!-- Premium Gradients for subtle depth -->
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    
+    <linearGradient id="jacket-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="lapel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    
+    <linearGradient id="tie-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Smooth Solid Background Disc -->
+  <circle cx="256" cy="256" r="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="4" />
+
+  <!-- Avatar Character Group (Clipped) -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Back Hair / Silhouette Depth -->
+    <path d="M 175,220 C 165,250 175,285 190,295 L 322,295 C 337,285 347,250 337,220 Z" fill="#0F172A" />
+
+    <!-- Neck (Shadowed Base) -->
+    <path d="M 224,280 L 224,355 C 224,370 288,370 288,355 L 288,280 Z" fill="#E28A4B" />
+    <!-- Neck Highlight (Front) -->
+    <path d="M 234,280 L 234,350 C 234,362 278,362 278,350 L 278,280 Z" fill="#FED7AA" />
+
+    <!-- Tailored Suit & Shirt Base -->
+    <!-- Inner White Shirt -->
+    <path d="M 220,350 L 256,415 L 292,350 Z" fill="#F1F5F9" />
+    
+    <!-- Modern Tech Blue Tie -->
+    <path d="M 246,380 L 266,380 L 260,400 L 252,400 Z" fill="#0284C7" />
+    <path d="M 248,398 L 264,398 L 272,476 L 240,476 Z" fill="url(#tie-grad)" />
+
+    <!-- Crisp White Collar Left -->
+    <path d="M 224,350 L 256,398 L 242,350 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <!-- Crisp White Collar Right -->
+    <path d="M 288,350 L 256,398 L 270,350 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+
+    <!-- Sharp Blazer / Jacket -->
+    <path d="M 120,476 C 120,388 185,355 224,350 L 256,402 L 288,350 C 327,355 392,388 392,476 Z" fill="url(#jacket-grad)" />
+
+    <!-- Left Lapel -->
+    <path d="M 224,350 L 256,412 L 202,444 Z" fill="url(#lapel-grad)" />
+    <!-- Right Lapel -->
+    <path d="M 288,350 L 256,412 L 310,444 Z" fill="url(#lapel-grad)" />
+
+    <!-- Institutional Gold Pin (Symbol of Competence) -->
+    <path d="M 214,412 L 220,406 L 226,412 L 220,420 Z" fill="#F59E0B" />
+    <path d="M 220,406 L 226,412 L 220,414 Z" fill="#FBBF24" />
+
+    <!-- Head / Face Structure -->
+    <path d="M 186,210 C 186,150 326,150 326,210 C 326,270 296,306 256,306 C 216,306 186,270 186,210 Z" fill="#FED7AA" />
+
+    <!-- Soft Cheek Warmth -->
+    <circle cx="206" cy="254" r="10" fill="#FCA5A5" opacity="0.25" />
+    <circle cx="306" cy="254" r="10" fill="#FCA5A5" opacity="0.25" />
+
+    <!-- Sharp, Modern Hair (Swooping Quiff) -->
+    <path d="M 180,200 C 180,112 240,92 285,106 C 330,120 336,160 336,200 C 336,214 322,214 316,204 C 302,176 276,172 256,182 C 236,192 216,216 196,216 C 186,216 180,210 180,200 Z" fill="url(#hair-grad)" />
+    <!-- Hair Highlight -->
+    <path d="M 212,138 C 232,114 270,114 294,128 C 274,122 240,122 220,142 Z" fill="#475569" />
+
+    <!-- Attentive, Focused Eyes -->
+    <!-- Left Eye -->
+    <circle cx="224" cy="222" r="6" fill="#0F172A" />
+    <circle cx="222" cy="220" r="2" fill="#FFFFFF" />
+    <!-- Right Eye -->
+    <circle cx="288" cy="222" r="6" fill="#0F172A" />
+    <circle cx="286" cy="220" r="2" fill="#FFFFFF" />
+
+    <!-- Sharp Eyebrows -->
+    <path d="M 202,192 Q 224,182 242,194" stroke="#0F172A" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 270,194 Q 288,182 310,192" stroke="#0F172A" stroke-width="4" stroke-linecap="round" fill="none" />
+
+    <!-- Professional Glasses (Sharp Digital Specialist Vibe) -->
+    <!-- Left Frame -->
+    <rect x="198" y="202" width="52" height="42" rx="14" fill="none" stroke="#0F172A" stroke-width="4.5" />
+    <!-- Right Frame -->
+    <rect x="262" y="202" width="52" height="42" rx="14" fill="none" stroke="#0F172A" stroke-width="4.5" />
+    <!-- Glasses Bridge -->
+    <path d="M 250,218 L 262,218" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Glasses Temples -->
+    <path d="M 198,218 L 184,218" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 314,218 L 328,218" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Lens Glare -->
+    <path d="M 202,206 L 224,206 L 208,238 L 202,238 Z" fill="#FFFFFF" opacity="0.15" />
+    <path d="M 266,206 L 288,206 L 272,238 L 266,238 Z" fill="#FFFFFF" opacity="0.15" />
+
+    <!-- Clean, Friendly Nose -->
+    <path d="M 252,236 L 252,255 C 252,258 255,260 259,260" stroke="#E28A4B" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Warm, Confident Smile -->
+    <path d="M 234,274 Q 256,290 278,274" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Subtle Under-Lip Shadow -->
+    <path d="M 248,286 Q 256,289 264,286" stroke="#E28A4B" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  </g>
+</svg>
