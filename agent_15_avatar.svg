@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <clipPath id="avatar-clip">
+      <circle cx="256" cy="256" r="220" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Disc -->
+  <circle cx="256" cy="256" r="220" fill="#E2F0D9" />
+
+  <!-- Character Wrapper (Clipped to Disc) -->
+  <g clip-path="url(#avatar-clip)">
+    
+    <!-- Torso / Suit Jacket -->
+    <path d="M 130,460 C 130,360 180,325 225,320 L 256,375 L 287,320 C 332,325 382,360 382,460 Z" fill="#0A2540" />
+    
+    <!-- Left Shoulder Highlight -->
+    <path d="M 130,460 C 130,360 180,325 225,320 C 200,335 160,380 155,460 Z" fill="#FFFFFF" opacity="0.08" />
+
+    <!-- Inner Shirt (Crisp White) -->
+    <path d="M 225,320 L 287,320 L 256,375 Z" fill="#FFFDF9" />
+    
+    <!-- Shirt Collar Details -->
+    <path d="M 225,320 L 256,350 L 256,320 Z" fill="#E2E8F0" />
+    <path d="M 287,320 L 256,350 L 256,320 Z" fill="#FFFFFF" />
+
+    <!-- Tie (Gold / Institutional Accent) -->
+    <path d="M 251,340 L 261,340 L 265,460 L 256,470 L 247,460 Z" fill="#F59E0B" />
+    <!-- Tie Knot & Shadow -->
+    <path d="M 251,340 L 261,340 L 258,352 L 254,352 Z" fill="#D97706" />
+    <path d="M 256,352 L 265,460 L 256,470 Z" fill="#D97706" opacity="0.3" />
+
+    <!-- Jacket Lapels -->
+    <path d="M 225,320 L 256,375 L 240,460 L 190,390 Z" fill="#111827" opacity="0.15" />
+    <path d="M 287,320 L 256,375 L 272,460 L 322,390 Z" fill="#111827" opacity="0.15" />
+
+    <!-- Gold Lapel Pin (Institutional Competence) -->
+    <circle cx="206" cy="376" r="7" fill="#F59E0B" />
+    <circle cx="206" cy="376" r="3" fill="#FFFDF9" />
+
+    <!-- Neck -->
+    <path d="M 232,250 L 280,250 L 280,325 L 232,325 Z" fill="#FAD0B1" />
+    <!-- Neck Shadow (Under Chin) -->
+    <path d="M 232,250 L 256,305 L 280,250 Z" fill="#E5A682" />
+    <!-- Collar Shadow on Neck -->
+    <path d="M 232,315 L 280,315 L 256,328 Z" fill="#E5A682" opacity="0.6" />
+
+    <!-- Ears -->
+    <circle cx="192" cy="210" r="14" fill="#FAD0B1" />
+    <circle cx="194" cy="210" r="8" fill="#E5A682" opacity="0.6" />
+    <circle cx="320" cy="210" r="14" fill="#FAD0B1" />
+    <circle cx="318" cy="210" r="8" fill="#E5A682" opacity="0.6" />
+
+    <!-- Face Base -->
+    <path d="M 196,190 C 196,140 316,140 316,190 C 316,245 290,275 256,275 C 222,275 196,245 196,190 Z" fill="#FAD0B1" />
+    <!-- Face Shadow (3/4 Dimension) -->
+    <path d="M 256,142 C 290,142 316,168 316,190 C 316,245 290,275 256,275 Z" fill="#E5A682" opacity="0.3" />
+
+    <!-- Cheek Blush (Warmth) -->
+    <circle cx="212" cy="228" r="10" fill="#FA8072" opacity="0.25" />
+    <circle cx="300" cy="228" r="10" fill="#FA8072" opacity="0.25" />
+
+    <!-- Nose -->
+    <path d="M 252,208 Q 256,226 262,223" stroke="#E5A682" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <ellipse cx="254" cy="214" rx="1.5" ry="3" fill="#FFFFFF" opacity="0.3" />
+
+    <!-- Smile (Warm & Confident) -->
+    <path d="M 234,240 C 234,240 242,256 256,256 C 270,256 278,240 278,240" fill="#FFFFFF" />
+    <path d="M 234,240 C 234,240 242,256 256,256 C 270,256 278,240 278,240" fill="none" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Eyes (Attentive & Sharp) -->
+    <circle cx="222" cy="192" r="7.5" fill="#0A2540" />
+    <circle cx="224.5" cy="189.5" r="2.5" fill="#FFFFFF" />
+    <circle cx="290" cy="192" r="7.5" fill="#0A2540" />
+    <circle cx="292.5" cy="189.5" r="2.5" fill="#FFFFFF" />
+
+    <!-- Eyebrows -->
+    <path d="M 206,176 Q 221,167 236,173" stroke="#0A2540" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 276,173 Q 291,167 306,176" stroke="#0A2540" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+    <!-- Glasses (Sharp Digital Specialist Look) -->
+    <circle cx="222" cy="192" r="22" stroke="#0A2540" stroke-width="5" fill="none" />
+    <circle cx="290" cy="192" r="22" stroke="#0A2540" stroke-width="5" fill="none" />
+    <path d="M 244,192 Q 256,186 268,192" stroke="#0A2540" stroke-width="5" fill="none" stroke-linecap="round" />
+    <!-- Glasses Temples -->
+    <path d="M 200,192 L 184,188" stroke="#0A2540" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M 312,192 L 328,188" stroke="#0A2540" stroke-width="4" fill="none" stroke-linecap="round" />
+    <!-- Glasses Glare -->
+    <path d="M 206,180 Q 220,174 234,183" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5" />
+    <path d="M 274,180 Q 288,174 302,183" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5" />
+
+    <!-- Hair (Modern, Professional Side-Part) -->
+    <!-- Back Hair / Sideburns -->
+    <path d="M 192,190 L 192,215 L 198,210 Z" fill="#0A2540" />
+    <path d="M 320,190 L 320,215 L 314,210 Z" fill="#0A2540" />
+    <!-- Main Hair Volume -->
+    <path d="M 180,210 C 174,146 210,112 256,112 C 302,112 338,146 332,210 C 320,198 310,194 300,194 C 280,164 235,164 215,194 C 200,194 190,198 180,210 Z" fill="#0A2540" />
+    <!-- Hair Highlight (Sleek Tech Blue) -->
+    <path d="M 242,122 C 270,122 302,136 318,162 C 298,147 268,142 242,152 Z" fill="#3B82F6" opacity="0.3" />
+    <!-- Forehead Shadow from Hair -->
+    <path d="M 196,190 C 196,180 210,170 240,165 C 270,160 300,170 316,190 C 300,180 270,175 240,180 C 210,185 200,190 196,190 Z" fill="#E5A682" opacity="0.4" />
+
+  </g>
+</svg>
